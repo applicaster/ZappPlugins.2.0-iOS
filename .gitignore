@@ -1,0 +1,48 @@
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.DS_Store
+
+
+# Modular
+#
+Modular-App/Modular-App/Resources
+Zapp-App/Resources/
+Zapp-App/Customization/ApplicasterSettings.plist
+Zapp-App/Customization/GAFeaturesCustomization.plist
+Zapp-App/Customization/GASecretCredentials.m
+Zapp-App/Customization/GAUICustomization.plist
+Zapp-App/Customization/GAZappStyles.json
+Zapp-App/Resources/Default-568h@2x.png
+Zapp-App/Zapp-App-Info.plist
+
+# ZappConfiguration
+#
+.zapp_env
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+Pods/**
+
+# Ruby versions
+.bundle/
+.ruby-version

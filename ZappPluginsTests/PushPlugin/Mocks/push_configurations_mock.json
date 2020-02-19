@@ -1,0 +1,37 @@
+[{
+	"plugin": {
+    "api": {
+      "class_name": "ZappPushPlugins.APPushProviderUrbanAirship"
+    },
+    "dependency_repository_url": [],
+    "author_name": "Miri Vecselboim",
+    "author_email": "m.vecselboim@applicaster.com",
+    "manifest_version": "0.1.0",
+    "name": "UrbanAirship",
+    "description": "Urban Airship wrapper",
+    "identifier": "UrbanAirship-iOS",
+    "type": "push",
+    "platform": "ios",
+    "dependency_name": "ZappPushPlugins/UrbanAirship",
+    "dependency_version": "0.1.0",
+    "custom_configuration_fields": [
+      {
+        "type": "text",
+        "key": "production_app_key"
+      },
+      {
+        "type": "text",
+        "key": "production_app_secret"
+      },
+      {
+        "type": "text",
+        "key": "dev_app_key"
+      },
+      {
+        "type": "text",
+        "key": "dev_app_secret"
+      }
+    ]
+  },
+	"configuration_json": {}
+}]

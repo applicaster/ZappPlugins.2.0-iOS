@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "523503484824ECA30D9F0D3546B51B66CB7D4007",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A348BF3F3E6AB2FB070AE659546544C24B4B757" : 9223372036854775807,
+    "523503484824ECA30D9F0D3546B51B66CB7D4007" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8F9B28EF-0432-4807-9F2F-3E1835929CFA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A348BF3F3E6AB2FB070AE659546544C24B4B757" : "",
+    "523503484824ECA30D9F0D3546B51B66CB7D4007" : "ZappPlugins-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZappPlugins",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZappPlugins.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/applicaster\/ZappPlugins-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "523503484824ECA30D9F0D3546B51B66CB7D4007"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:applicaster\/Zapp-iOS-7.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A348BF3F3E6AB2FB070AE659546544C24B4B757"
+    }
+  ]
+}

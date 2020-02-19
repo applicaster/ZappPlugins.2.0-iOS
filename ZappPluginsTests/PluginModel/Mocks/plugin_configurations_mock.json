@@ -1,0 +1,17 @@
+[{
+	"plugin": {
+		"manifest_version": "1.0",
+		"identifier": "ZappRoot/TabBar",
+		"name": "Root View Controller based on Tab Bar",
+		"description": "Root View Controller based on Tab Bar",
+		"platform": "ios",
+		"dependency_repository_url": "https://github.com/applicaster/ZappRoot-iOS.git",
+		"dependency_name": "Root/TabBar",
+		"dependency_version": "1.0",
+		"type": "menu",
+		"api": {
+			"class_name": "MATabBarAdapter"
+		}
+	},
+	"configuration_json": {}
+}]

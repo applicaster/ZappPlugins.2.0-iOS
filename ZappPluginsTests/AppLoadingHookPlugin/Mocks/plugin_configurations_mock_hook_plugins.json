@@ -1,0 +1,72 @@
+ [{
+   "plugin": {
+   "api": {
+			"require_startup_execution": true,
+			"class_name": "APHotLoginClient"
+   },
+   "dependency_repository_url": [],
+   "author_name": "Miri Vecselboim",
+   "author_email": "m.vecselboim@applicaster.com",
+   "manifest_version": "0.1.0",
+   "name": "Hot Login",
+   "description": "Hot SSO client",
+   "identifier": "APHotSsoClient",
+   "type": "login",
+   "platform": "ios",
+   "min_zapp_sdk": "3.2.1",
+   "dependency_name": "APHotSsoClient",
+   "dependency_version": "0.1.0"
+   },
+   "configuration_json": {}
+},
+  {
+  "plugin": {
+		"api": {
+  "class_name": "ZappRoot.ZPNativeTabBarController"
+		},
+		"author_name": "Alex Zchut",
+		"author_email": "a.zchut@applicaster.com",
+		"manifest_version": "1.2.0",
+		"name": "NativeTabBar",
+		"description": "Native Tab Bar",
+		"identifier": "NativeTabBar-iOS",
+		"type": "menu",
+		"platform": "ios",
+		"dependency_repository_url": [],
+		"dependency_name": "ZappRoot/NativeTabBar",
+		"dependency_version": "1.2.0"
+  },
+  "configuration_json": {
+		"background_color": "000000D9",
+		"tab_bar_tint_color": "000000D9",
+		"tab_bar_item_positioning": "",
+		"tab_bar_item_style_unselected": "SideMenuCellTitleLabel",
+		"tab_bar_item_style_selected": "SideMenuSelectedCellTitleLabel",
+		"tab_bar_is_translucent": "1",
+		"tab_bar_item_title_vertical_offset": "0",
+		"tab_bar_item_image_tag": "menu_icon",
+		"collection_datasource": "side_menu_collection"
+  }
+  },
+  {
+  "plugin": {
+  "api": {
+  "require_startup_execution": true,
+  "class_name": "APHotLoginClient"
+  },
+  "dependency_repository_url": [],
+  "author_name": "Miri Vecselboim",
+  "author_email": "m.vecselboim@applicaster.com",
+  "manifest_version": "0.1.0",
+  "name": "Hot Login",
+  "description": "Hot SSO client",
+  "identifier": "APHotSsoClient",
+  "type": "login",
+  "platform": "ios",
+  "min_zapp_sdk": "3.2.1",
+  "dependency_name": "APHotSsoClient",
+  "dependency_version": "0.1.0"
+  },
+  "configuration_json": {}
+  }
+]
