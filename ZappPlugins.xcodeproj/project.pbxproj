@@ -70,7 +70,6 @@
 		406A5601213498C60034350F /* ZLScreenModel+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A5600213498C50034350F /* ZLScreenModel+Refresh.swift */; };
 		406AD74121875FED003588EF /* ZPPlugableScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AD74021875FED003588EF /* ZPPlugableScreenDelegate.swift */; };
 		406AD7452188C8D5003588EF /* ZPScreenPluginRNProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AD7442188C8D5003588EF /* ZPScreenPluginRNProtocol.swift */; };
-		406C138E234B82B8000A859E /* ZPIdentityClientBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C138D234B82B8000A859E /* ZPIdentityClientBase.swift */; };
 		4073E31021A57450003DA0D8 /* APCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4073E30A21A57450003DA0D8 /* APCacheManager.swift */; };
 		4073E31121A57450003DA0D8 /* APFileLoadingCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4073E30B21A57450003DA0D8 /* APFileLoadingCompletion.swift */; };
 		4073E31221A57450003DA0D8 /* APCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4073E30C21A57450003DA0D8 /* APCacheHelper.swift */; };
@@ -336,7 +335,6 @@
 		406A5600213498C50034350F /* ZLScreenModel+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZLScreenModel+Refresh.swift"; sourceTree = "<group>"; };
 		406AD74021875FED003588EF /* ZPPlugableScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPPlugableScreenDelegate.swift; sourceTree = "<group>"; };
 		406AD7442188C8D5003588EF /* ZPScreenPluginRNProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPScreenPluginRNProtocol.swift; sourceTree = "<group>"; };
-		406C138D234B82B8000A859E /* ZPIdentityClientBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPIdentityClientBase.swift; sourceTree = "<group>"; };
 		4073E30A21A57450003DA0D8 /* APCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APCacheManager.swift; sourceTree = "<group>"; };
 		4073E30B21A57450003DA0D8 /* APFileLoadingCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APFileLoadingCompletion.swift; sourceTree = "<group>"; };
 		4073E30C21A57450003DA0D8 /* APCacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APCacheHelper.swift; sourceTree = "<group>"; };
@@ -978,7 +976,6 @@
 		4077CAC3219B938B007471DC /* Universal */ = {
 			isa = PBXGroup;
 			children = (
-				406C138D234B82B8000A859E /* ZPIdentityClientBase.swift */,
 				FAF4F0C52214C0C500EFBE42 /* ZPJsonSerializableProtocol.swift */,
 				400F84E31D084C5500DE5DFB /* ZPPluginManager.swift */,
 			);
@@ -2026,7 +2023,6 @@
 				6A5EBC0A20D2C5660070FC54 /* ZPAdPresenterProtocol.swift in Sources */,
 				401571F01FDF4A6800464C90 /* ZPRootViewContainerControllerDelegate.swift in Sources */,
 				1D9DE15523828661009C5FC1 /* ZPAnalyticsProviderProtocol.swift in Sources */,
-				406C138E234B82B8000A859E /* ZPIdentityClientBase.swift in Sources */,
 				FA07A5E22136B91C00E377DA /* ZPModelProtocol.swift in Sources */,
 				409D28E222011A53001FE5B0 /* SwiftSwizzler.swift in Sources */,
 				FA07A5DD2136B8EB00E377DA /* ZPBroadcasterProtocol.swift in Sources */,
@@ -2346,7 +2342,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.6.0;
+				MARKETING_VERSION = 11.6.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -2375,7 +2371,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.6.0;
+				MARKETING_VERSION = 11.6.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
