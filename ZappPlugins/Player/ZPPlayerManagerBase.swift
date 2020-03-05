@@ -22,6 +22,16 @@ import ZappCore
         if let plugins = ZPPluginManager.pluginModels()?.filter({ $0.pluginType == .VideoPlayer }) {
             retVal = plugins
         }
+        
+        
+        //move default player to end
+        let defaultPlayer = retVal.first { $0.identifier == ZPPlayerManager.ZPPlayerManagerIOSKeys.applicasterVideoPlayerId }
+        if let defaultPlayer = defaultPlayer,
+            let index = retVal.firstIndex(of: defaultPlayer) {
+            retVal.remove(at: index)
+            retVal.append(defaultPlayer)
+        }
+        
        return retVal
     }()
     

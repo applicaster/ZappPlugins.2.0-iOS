@@ -55,6 +55,8 @@ import ZappCore
     public struct ZPPlayerManagerIOSKeys {
         public static let ttPluginExternalIdentifier = "a623b3e4fd8de96a549ec9f7bdc8c4d2"
         static let applicasterAudioPlayerId = "applicaster_audio_player"
+        static let applicasterVideoPlayerId = "applicaster_video_player"
+
     }
     
     @objc public static let sharedInstance = ZPPlayerManager()
