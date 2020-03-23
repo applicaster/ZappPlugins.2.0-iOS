@@ -34,4 +34,5 @@
 @objc public enum ZPGeneralPluginsFamily: Int {
     case notDefined = 0
     case ui
+    case chromecast
 }
