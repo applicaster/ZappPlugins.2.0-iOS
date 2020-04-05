@@ -116,7 +116,7 @@ import Foundation
     @objc func viewControllerByScreenName(screenName: String, title: String?, dataSourceModel: NSObject?) -> UIViewController?
     
     /// Updates view controller content by given feeds url
-    @objc func updateViewControllerFeedUrl(vc: UIViewController, feedUrl: String) -> Bool
+    @objc func updateViewControllerFeedUrl(vc: UIViewController, feedUrl: String) -> APContainerProtocol?
     
     #endif
 
