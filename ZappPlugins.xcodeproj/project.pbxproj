@@ -187,6 +187,7 @@
 		6A5EBC0D20D2C5660070FC54 /* ZPAdViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EBC0620D2C5660070FC54 /* ZPAdViewProtocol.swift */; };
 		6A5EBC0E20D2C5660070FC54 /* ZPAdPluginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EBC0720D2C5660070FC54 /* ZPAdPluginProtocol.swift */; };
 		6A7E2BEF23A2599400E1885B /* APURLPlayableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7E2BEE23A2599400E1885B /* APURLPlayableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716AFC952451B8C000D0C4CD /* ZPCustomUrlSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716AFC942451B8C000D0C4CD /* ZPCustomUrlSchemeHandler.swift */; };
 		A62D89DE22380D8500568215 /* ZPGoogleIMAProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D89DD22380D8500568215 /* ZPGoogleIMAProtocol.swift */; };
 		FA07A5DD2136B8EB00E377DA /* ZPBroadcasterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A5DC2136B8EA00E377DA /* ZPBroadcasterProtocol.swift */; };
 		FA07A5E02136B8FC00E377DA /* APProgramProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FA07A5DF2136B8FB00E377DA /* APProgramProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -453,6 +454,7 @@
 		6A5EBC0620D2C5660070FC54 /* ZPAdViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPAdViewProtocol.swift; sourceTree = "<group>"; };
 		6A5EBC0720D2C5660070FC54 /* ZPAdPluginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPAdPluginProtocol.swift; sourceTree = "<group>"; };
 		6A7E2BEE23A2599400E1885B /* APURLPlayableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APURLPlayableProtocol.h; sourceTree = "<group>"; };
+		716AFC942451B8C000D0C4CD /* ZPCustomUrlSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPCustomUrlSchemeHandler.swift; sourceTree = "<group>"; };
 		8E336D1F04A792AC7561C690 /* Pods-ZappPlugins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappPlugins.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappPlugins/Pods-ZappPlugins.release.xcconfig"; sourceTree = "<group>"; };
 		93EB988E48ACDAC264AEA788 /* Pods_ZappPlugins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZappPlugins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992592B87F7BA1FC0EE2AF29 /* Pods-ZappPlugins-ZappPluginsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZappPlugins-ZappPluginsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZappPlugins-ZappPluginsTests/Pods-ZappPlugins-ZappPluginsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -971,6 +973,7 @@
 				405E15F22334320E0039567D /* ZAApplicationDelegateProtocol.swift */,
 				405E16F2233575790039567D /* APLocalSplashHelper.swift */,
 				405E16F4233576E10039567D /* APScreenMultiplierConverter.swift */,
+				716AFC942451B8C000D0C4CD /* ZPCustomUrlSchemeHandler.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -2073,6 +2076,7 @@
 				6A5EBC0E20D2C5660070FC54 /* ZPAdPluginProtocol.swift in Sources */,
 				FA65B7D3211C89E500856876 /* ZPPurchasableItemProtocol.swift in Sources */,
 				40D1D12820BB6A9300B21417 /* ZAAppDelegateQuickBrickProtocol.swift in Sources */,
+				716AFC952451B8C000D0C4CD /* ZPCustomUrlSchemeHandler.swift in Sources */,
 				07CF76CC20F2551400E363F3 /* ZAAppDelegateConnectorIdentityProtocol.swift in Sources */,
 				6A5EBC0B20D2C5660070FC54 /* ZPAdConfig.swift in Sources */,
 				4081B52B216D5C4B003F8760 /* ZLScreenModel+HooksPlugins.swift in Sources */,
