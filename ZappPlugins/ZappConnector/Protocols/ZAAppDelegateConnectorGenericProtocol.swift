@@ -127,4 +127,9 @@ import Foundation
     ///
     /// - Returns: URL instance
     @objc func pluginsURLPath() -> URL?
+    
+    /// Replace s3 host url with custom host
+    //
+    /// - Returns: URL instance
+    @objc func replaceS3hostname(in urlString: String) -> String
 }
