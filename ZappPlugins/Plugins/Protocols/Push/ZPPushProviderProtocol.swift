@@ -49,5 +49,10 @@ import Foundation
      register userNotificationSettings with push server
      */
     @objc optional func didRegisterUserNotificationSettings(_ notificationSettings: UIUserNotificationSettings)
+    
+    /**
+     ability to enable or disable the notification during app use
+     */
+    @objc optional func setEnable(_ value: Bool)
 
 }
