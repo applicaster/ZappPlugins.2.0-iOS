@@ -6,6 +6,7 @@
 //
 
 @import UIKit;
+@import WebKit;
 #import "CAComponentProtocol.h"
 
 @interface CACellViewControllerBase : UIViewController <CAComponentProtocol>
@@ -99,7 +100,7 @@
 /**
  The Webview container is used for displaying HTML tickers (for things like live match scores)
  */
-@property (weak, nonatomic) IBOutlet UIWebView *tickerWebView;
+@property (weak, nonatomic) IBOutlet WKWebView *tickerWebView;
 
 /**
  Method which indicates the cell style - call-to-action or default.
