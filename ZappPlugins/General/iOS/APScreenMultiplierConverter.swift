@@ -17,7 +17,7 @@ import UIKit
     private static let iPhone_1242h = "LaunchImage-1200-Portrait-2688h"
     private static let iPad_1366h  = "Default-1366h"
     
-    private static let filesToDisableZoomMode = [iPhone_667h, iPhone_736h, iPhone_812h, iPhone_896h, iPhone_1242h]
+    private static let filesToDisableZoomMode = [iPhone_667h, iPhone_736h, iPhone_812h]
     private static var isZoomModeDisabled:Bool = {
         var retVal = true
         
