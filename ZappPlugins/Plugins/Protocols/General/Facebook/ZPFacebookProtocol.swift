@@ -39,6 +39,10 @@ import Foundation
                imageUrl: URL?)
     func closeSession()
     func createUser(with dict: [AnyHashable : Any]?) -> ZPFacebookUserProtocol?
+    func request(withPath path: String?,
+                 params: NSMutableDictionary?,
+                 httpMethod: String?,
+                 completion: ((_ result: Any?, _ error: Error?) -> Void)?)
 }
 
 @objc public protocol ZPFacebookUserProtocol {
