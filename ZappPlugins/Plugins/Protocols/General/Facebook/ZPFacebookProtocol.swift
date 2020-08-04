@@ -16,7 +16,7 @@ import Foundation
     func authorizeFacebook(_ forced: Bool,
                            readPermissions: [Any]?,
                            completion: ((_ loggedIn: Bool, _ error: Error?) -> Void)?)
-    func getFacebookProfileImageUrlString(with profileID: String?, size: CGSize)
+    func getFacebookProfileImageUrlString(with profileID: String?, size: CGSize) -> String
     
     
     func getAccessToken() -> String?
@@ -43,6 +43,16 @@ import Foundation
                  params: NSMutableDictionary?,
                  httpMethod: String?,
                  completion: ((_ result: Any?, _ error: Error?) -> Void)?)
+    
+    func createComment(withText text: String?,
+                 image: UIImage?,
+                 postId: String?,
+                 completion: ((_ resultCommentId: String?, _ error: Error?) -> Void)?)
+    
+    func createPost(withText text: String?,
+                 image: UIImage?,
+                 pageId: String?,
+                 completion: ((_ resultPostId: String?, _ error: Error?) -> Void)?)
 }
 
 @objc public protocol ZPFacebookUserProtocol {
