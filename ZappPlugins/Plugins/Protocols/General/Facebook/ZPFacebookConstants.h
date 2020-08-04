@@ -19,3 +19,4 @@ extern NSString * _Nonnull const APFacebookDidLoginNotification;
 extern NSString * _Nonnull const APFacebookDidLogoutNotification;
 /** This notification is sent when facebook didn't manage to Login */
 extern NSString * _Nonnull const APFacebookDidNotLoginNotification;
+extern NSString * _Nonnull const APFacebookSessionStateChangedNotification;

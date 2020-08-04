@@ -38,10 +38,11 @@ import Foundation
                description: String?,
                imageUrl: URL?)
     func closeSession()
-    func createUser(with dict: [AnyHashable : Any]?) -> ZPFacebookUserProtocol
+    func createUser(with dict: [AnyHashable : Any]?) -> ZPFacebookUserProtocol?
 }
 
 @objc public protocol ZPFacebookUserProtocol {
     var name: String? {get set}
     var objectID: String? {get set}
+    var avatarImageUrl: String? {get set}
 }
