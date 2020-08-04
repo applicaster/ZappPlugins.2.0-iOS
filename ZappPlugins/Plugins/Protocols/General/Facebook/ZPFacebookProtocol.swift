@@ -38,6 +38,7 @@ import Foundation
                description: String?,
                imageUrl: URL?)
     func closeSession()
+    func createUser(with dict: [AnyHashable : Any]?) -> ZPFacebookUserProtocol
 }
 
 @objc public protocol ZPFacebookUserProtocol {
