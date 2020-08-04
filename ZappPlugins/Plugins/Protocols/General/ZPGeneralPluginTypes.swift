@@ -35,4 +35,5 @@
     case notDefined = 0
     case ui
     case chromecast
+    case facebook
 }

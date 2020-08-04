@@ -47,6 +47,9 @@
 		1D9DE15723828661009C5FC1 /* ZPAnalyticsScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE13423828661009C5FC1 /* ZPAnalyticsScreenProtocol.swift */; };
 		1D9DE159238286B4009C5FC1 /* ZAAppDelegateConnectorPluginsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE158238286B4009C5FC1 /* ZAAppDelegateConnectorPluginsProtocol.swift */; };
 		1D9DE1C2238697E3009C5FC1 /* ZAAppDelegateConnectorNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9DE1C1238697E3009C5FC1 /* ZAAppDelegateConnectorNavigationProtocol.swift */; };
+		1DAD90E924D96E1B00F294E3 /* ZPFacebookProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD90E824D96E1B00F294E3 /* ZPFacebookProtocol.swift */; };
+		1DAD90EC24D96E4300F294E3 /* ZPFacebookConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DAD90EA24D96E4300F294E3 /* ZPFacebookConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DAD90ED24D96E4300F294E3 /* ZPFacebookConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD90EB24D96E4300F294E3 /* ZPFacebookConstants.m */; };
 		1DB200372337985C0007D676 /* ZPHqmeButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB200352337985C0007D676 /* ZPHqmeButtonProtocol.swift */; };
 		1DB200382337985C0007D676 /* ZPHqmeButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB200362337985C0007D676 /* ZPHqmeButtonDelegate.swift */; };
 		1DB2003A23379ADA0007D676 /* ZPHqmeSupportingItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2003923379ADA0007D676 /* ZPHqmeSupportingItemProtocol.swift */; };
@@ -311,6 +314,9 @@
 		1D9DE13423828661009C5FC1 /* ZPAnalyticsScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPAnalyticsScreenProtocol.swift; sourceTree = "<group>"; };
 		1D9DE158238286B4009C5FC1 /* ZAAppDelegateConnectorPluginsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateConnectorPluginsProtocol.swift; sourceTree = "<group>"; };
 		1D9DE1C1238697E3009C5FC1 /* ZAAppDelegateConnectorNavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAAppDelegateConnectorNavigationProtocol.swift; sourceTree = "<group>"; };
+		1DAD90E824D96E1B00F294E3 /* ZPFacebookProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPFacebookProtocol.swift; sourceTree = "<group>"; };
+		1DAD90EA24D96E4300F294E3 /* ZPFacebookConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPFacebookConstants.h; sourceTree = "<group>"; };
+		1DAD90EB24D96E4300F294E3 /* ZPFacebookConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPFacebookConstants.m; sourceTree = "<group>"; };
 		1DB200352337985C0007D676 /* ZPHqmeButtonProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPHqmeButtonProtocol.swift; sourceTree = "<group>"; };
 		1DB200362337985C0007D676 /* ZPHqmeButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPHqmeButtonDelegate.swift; sourceTree = "<group>"; };
 		1DB2003923379ADA0007D676 /* ZPHqmeSupportingItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPHqmeSupportingItemProtocol.swift; sourceTree = "<group>"; };
@@ -595,6 +601,7 @@
 		1D9DE10923828661009C5FC1 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				1DAD90E724D96E1B00F294E3 /* Facebook */,
 				1D9DE10A23828661009C5FC1 /* ZPGeneralPluginProtocol.swift */,
 				1D9DE10B23828661009C5FC1 /* ZPAutomationProtocol.swift */,
 				1D9DE10C23828661009C5FC1 /* ZPGeneralPluginTypes.swift */,
@@ -681,6 +688,16 @@
 				1D9DE13423828661009C5FC1 /* ZPAnalyticsScreenProtocol.swift */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		1DAD90E724D96E1B00F294E3 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				1DAD90EA24D96E4300F294E3 /* ZPFacebookConstants.h */,
+				1DAD90EB24D96E4300F294E3 /* ZPFacebookConstants.m */,
+				1DAD90E824D96E1B00F294E3 /* ZPFacebookProtocol.swift */,
+			);
+			path = Facebook;
 			sourceTree = "<group>";
 		};
 		1DB200342337985C0007D676 /* Hqme */ = {
@@ -1783,6 +1800,7 @@
 				40BD418D21AD3D2D001A0D2E /* APKeychain.h in Headers */,
 				409E0DFB20AC97180096C9B7 /* NSURL+APAddition.h in Headers */,
 				FAE5B03520E18BA900EF5CE0 /* CABasicGenericViewControllerDataSource.h in Headers */,
+				1DAD90EC24D96E4300F294E3 /* ZPFacebookConstants.h in Headers */,
 				40D1D12920BB6A9300B21417 /* ZAAppDelegateConnectorFacebookAccountKitProtocol.h in Headers */,
 				409E0DE820AC97180096C9B7 /* AVPlayerItem+APAdditions.h in Headers */,
 				409E0DF920AC97180096C9B7 /* UIDevice+APAdditions.h in Headers */,
@@ -2035,6 +2053,7 @@
 				FA07A5DD2136B8EB00E377DA /* ZPBroadcasterProtocol.swift in Sources */,
 				1D9DE13F23828661009C5FC1 /* ZPAdapterNavBarProtocol.swift in Sources */,
 				FAE5AFD720E1088B00EF5CE0 /* ZLNavigationModel.swift in Sources */,
+				1DAD90E924D96E1B00F294E3 /* ZPFacebookProtocol.swift in Sources */,
 				4DE6A18C1E936CEA0088A164 /* ZPAppLoadingHookProtocol.swift in Sources */,
 				FAE5B01920E183D400EF5CE0 /* CAComponentModelProtocol.swift in Sources */,
 				FAE5AFF120E16E9100EF5CE0 /* ZLComponentModel.swift in Sources */,
@@ -2099,6 +2118,7 @@
 				FA65B7CC211C89A300856876 /* ZPImageView.swift in Sources */,
 				07DFB1EB2270E615000AB5D3 /* UIButton+APAdditions.swift in Sources */,
 				4077CABE219B8A2F007471DC /* UIImage+APAdditionsiOS.m in Sources */,
+				1DAD90ED24D96E4300F294E3 /* ZPFacebookConstants.m in Sources */,
 				FAE5B02220E185FE00EF5CE0 /* ZLComponentBuilderProtocol.swift in Sources */,
 				1D9DE13A23828661009C5FC1 /* ZPChromecastCustomDialogProtocol.swift in Sources */,
 				40AA37AE21B13D2F000A79FC /* ZPPlayerManagerBase.swift in Sources */,

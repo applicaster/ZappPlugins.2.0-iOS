@@ -72,5 +72,6 @@ FOUNDATION_EXPORT const unsigned char ZappPluginsVersionString[];
 #import "UIImage+APAdditionsiOS.h"
 #import "UILabel+GAAdditions.h"
 #import "ZPAnalyticsConstants.h"
+#import "ZPFacebookConstants.h"
 
 @import ZappCore;
