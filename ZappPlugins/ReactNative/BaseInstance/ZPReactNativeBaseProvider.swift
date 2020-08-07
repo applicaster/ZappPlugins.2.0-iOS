@@ -10,7 +10,7 @@ import UIKit
 import ZappCore
 
 open class ZPReactNativeBaseProvider : UIViewController, ZPReactNativeProviderProtocol, ZPPluginPresenterProtocol, ZPPluggableScreenProtocol {
-    public var screenPluginDelegate: ZPPlugableScreenDelegate?
+    public weak var screenPluginDelegate: ZPPlugableScreenDelegate?
     
     public private(set) var screenModel:ZLScreenModel?
     
