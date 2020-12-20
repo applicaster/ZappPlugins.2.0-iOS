@@ -15,7 +15,11 @@
 @implementation APKeychain
 
 + (NSString *)bundleIdentifier {
+    #if TARGET_OS_TV
+    return NSBundle.mainBundle.bundleIdentifier;
+    #else
     return [ConnectorResolver bundleIndentifier];
+    #endif
 }
 
 + (BOOL)setString:(NSString *)string forKey:(NSString *)key {

@@ -1,8 +1,10 @@
 Pod::Spec.new do |s|
 	s.name = "ZappPlugins"
-	s.version = "11.8.0"
-	s.platform = :ios
-	s.ios.deployment_target = "10.0"
+	s.version = "11.9.0"
+	s.platforms = { 
+		:ios => "10.0", 
+		:tvos => "10.0" 
+	}
 	s.summary = "ZappPlugins"
 	s.description = "Zapp Plugins store Protocol and Managers that relevant for Applicaster Zapp Plugin System"
 	s.homepage = "https://applicaster.com"
@@ -14,8 +16,12 @@ Pod::Spec.new do |s|
   }
 	s.frameworks = 'AVFoundation'
 
-	s.source_files  = 'ZappPlugins/**/*.{h,m,swift}'
-
+	s.ios.source_files  = 'ZappPlugins/**/*.{h,m,swift}'
+	s.tvos.source_files  = [
+		'ZappPlugins/ZappHelpers/**/Universal/**/*.{h,m,swift}',
+		'ZappPlugins/**/ZPJsonSerializableProtocol.swift',
+		'ZappPlugins/**/ZPAnalyticsProviderProtocol.swift'
+	]
 	s.xcconfig = {  'ENABLE_BITCODE' => 'YES',
 				    'SWIFT_VERSION' => '5.1',
 				    'ENABLE_TESTABILITY' => 'YES',
