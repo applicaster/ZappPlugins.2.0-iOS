@@ -1,10 +1,12 @@
 PODS:
-  - Cuckoo (1.0.6)
-  - ZappCore (0.9.5)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
+  - ZappCore (0.13.11)
 
 DEPENDENCIES:
-  - Cuckoo (= 1.0.6)
-  - ZappCore (from `https://github.com/applicaster/AppleApplicasterFrameworks.git`, branch `master`)
+  - Cuckoo (= 1.4.1)
+  - "ZappCore (from `./node_modules/@applicaster/zapp-core/apple/ZappCore.podspec`)"
 
 SPEC REPOS:
   trunk:
@@ -12,18 +14,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   ZappCore:
-    :branch: master
-    :git: https://github.com/applicaster/AppleApplicasterFrameworks.git
-
-CHECKOUT OPTIONS:
-  ZappCore:
-    :commit: ab7202385854af960682a2753dd813af44fa68f1
-    :git: https://github.com/applicaster/AppleApplicasterFrameworks.git
+    :path: "./node_modules/@applicaster/zapp-core/apple/ZappCore.podspec"
 
 SPEC CHECKSUMS:
-  Cuckoo: 8074fc309159c4862665b83798f5ad03e061e8bd
-  ZappCore: a06163a89b19d1ddbae8797cca3171f62feb71c8
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
+  ZappCore: b0bc68d62c7f8cfad59e86f41a0474f33e84cd21
 
-PODFILE CHECKSUM: 5cc1001bebb56a2e91278718c02e4b90f26805f6
+PODFILE CHECKSUM: 776fe233f858825fe090863fdc6a0230c744dd7c
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.3

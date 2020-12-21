@@ -2434,7 +2434,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Applicaster.ZappPluginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZappPluginsTests/ZappPluginsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
@@ -2456,7 +2455,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Applicaster.ZappPluginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "ZappPluginsTests/ZappPluginsTests-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Release;

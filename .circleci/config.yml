@@ -70,6 +70,25 @@ jobs:
           paths:
             - /Users/distiller/.rubies/ruby-2.4.2/lib/ruby/gems/2.4.0/gems
 
+      # install npm dependencies
+      - run:
+          name: NPM login
+          command: npx npm-shell-login
+
+      - restore_cache:
+          name: Restore npm dependencies
+          key: Zapp-Plugins-v1-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Installing NPM dependencies
+          command: yarn
+
+      - save_cache:
+          name: Saving NPM dependencies
+          key: Zapp-Plugins-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+            
       # Restore Cocoapods cache, save cache on lower level, after pod update
       - restore_cache:
           name: CocoaPods - restore cache

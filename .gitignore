@@ -46,3 +46,4 @@ Pods/**
 # Ruby versions
 .bundle/
 .ruby-version
+node_modules

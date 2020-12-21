@@ -1,0 +1,19 @@
+{
+  "author": "Applicaster",
+  "description": "React Native dependencies",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "name": "react_native_support",
+  "version": "1.0.0",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@applicaster/zapp-core": "0.13.11"
+  }
+}
