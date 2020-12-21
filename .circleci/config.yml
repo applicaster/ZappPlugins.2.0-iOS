@@ -14,8 +14,8 @@ jobs:
       SCHEME_NAME: "ZappPlugins"
       SCRIPTS_LOCAL_FOLDER: "~/.scripts-iOS"
       SCRIPTS_REPO_PATH: "git@github.com:applicaster/Scripts-iOS.git"
-      DEPLOY_VERSION: "0.17.6"
-      DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySingleXCFrameworkMultiPlatform.sh"
+      DEPLOY_VERSION: "0.17.7"
+      DEPLOY_COMMAND: "~/.scripts-iOS/circleCi/deploySingleFrameworkMultiplatformPublic.sh"
     working_directory: ~/ZappPlugins-iOS
     steps:
       - run:
