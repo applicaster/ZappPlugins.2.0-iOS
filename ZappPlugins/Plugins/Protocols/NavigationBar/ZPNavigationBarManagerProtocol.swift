@@ -9,7 +9,6 @@
 import Foundation
 
 @objc public protocol ZPNavigationBarManagerProtocol: NSObjectProtocol {
-    
     /// Notify Navigation Naviation bar manager that current Navigation Controller transitionStartedWithViewController
     ///
     /// - Parameters:
@@ -19,7 +18,7 @@ import Foundation
     func navigationController(_ navigationController: UINavigationController,
                               transitionStartedWithViewController viewController: UIViewController,
                               animated: Bool)
-    
+
     /// Notify Navigation Naviation bar manager that current Navigation Controller transitionEndedWithViewController
     ///
     /// - Parameters:
@@ -29,26 +28,22 @@ import Foundation
     func navigationController(_ navigationController: UINavigationController,
                               transitionEndedWithViewController viewController: UIViewController,
                               animated: Bool)
-    
+
     /// Notify Navigation Naviation bar manager that current Navigation Controller displayingRootViewController
     ///
     /// - Parameters:
     ///   - navigationController: current NavigationController instance
-    ///   - viewController: current viewController instance
-    ///   - animated: animated
+    ///   - rootViewController: current viewController instance
     func navigationController(_ navigationController: UINavigationController,
                               displayingRootViewController rootViewController: UIViewController)
-    
+
     /// Notify Navigation Naviation bar manager that current Navigation Controller displayingCurrentViewController
     ///
     /// - Parameters:
     ///   - navigationController: current NavigationController instance
-    ///   - viewController: current viewController instance
-    ///   - animated: animated
+    ///   - currentViewController: current viewController instance
+    ///   - previousViewController: animated
     func navigationController(_ navigationController: UINavigationController,
                               displayingCurrentViewController currentViewController: UIViewController,
                               previousViewController: UIViewController?)
 }
-
-
-

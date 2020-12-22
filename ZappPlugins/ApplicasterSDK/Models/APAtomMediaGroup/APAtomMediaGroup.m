@@ -17,8 +17,12 @@
 #pragma mark - Public
 
 - (id)copy {
-    NSData *archivedSelf = [NSKeyedArchiver archivedDataWithRootObject:self];
-    id newCopy = [NSKeyedUnarchiver unarchiveObjectWithData:archivedSelf];
+    NSData *archivedSelf = [NSKeyedArchiver archivedDataWithRootObject:self
+                                                 requiringSecureCoding:NO
+                                                                 error:nil];
+    id newCopy = [NSKeyedUnarchiver unarchivedObjectOfClass:[APAtomMediaGroup class]
+                                                   fromData:archivedSelf
+                                                      error:nil];
     return newCopy;
 }
 
@@ -27,8 +31,7 @@
 - (id)initWithCoder:(NSCoder *)decoder {
     if ((self = [super init])) {
         _mediaItems = [decoder decodeObjectForKey:@"mediaItems"];
-        _type       = [[decoder decodeObjectForKey:@"type"] integerValue];
-        
+        _type = [[decoder decodeObjectForKey:@"type"] integerValue];
     }
     return self;
 }
@@ -45,7 +48,7 @@
         _type = type;
         _mediaItems = [NSMutableDictionary new];
     }
-    
+
     return self;
 }
 
@@ -65,7 +68,7 @@
             break;
         }
     }
-    
+
     return retVal;
 }
 
@@ -97,7 +100,7 @@
             retVal = stringURL;
         }
     }
-    
+
     return retVal;
 }
 
