@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 	s.name = "ZappPlugins"
-	s.version = "11.9.0"
+	s.version = "12.0.0"
 	s.platforms = { 
-		:ios => "10.0", 
-		:tvos => "10.0" 
+		:ios => "12.0", 
+		:tvos => "12.0" 
 	}
 	s.summary = "ZappPlugins"
 	s.description = "Zapp Plugins store Protocol and Managers that relevant for Applicaster Zapp Plugin System"
