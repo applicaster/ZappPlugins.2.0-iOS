@@ -344,6 +344,8 @@ import ZappCore
                                     configuration: ZPPlayerConfiguration?,
                                     playableItems: [ZPPlayable]?) {
         let playableItem = playableItems?.first
+        let shouldContinueFlowIfOffline = ZAAppConnector.sharedInstance().connectivityDelegate.isOffline() && playableItem?.isFree() == true
+
         if let pluginModels = self.getPluginModels(playableItem),
             let pluginModel = pluginModels.first,
             let screenModel = ZAAppConnector.sharedInstance().genericDelegate.screenModelForPluginID(pluginID: pluginModel.identifier,
@@ -351,7 +353,7 @@ import ZappCore
             ZAAppConnector.sharedInstance().genericDelegate.hookManager().performPreHook(hookedViewController: playerInstance as? UIViewController,
                                                                                          screenID: screenModel.screenID,
                                                                                          model: playableItems as NSObject?) { continueFlow in
-                if continueFlow {
+                if continueFlow || shouldContinueFlowIfOffline {
                     playerInstance.presentPlayerFullScreen(rootViewController,
                                                            configuration: configuration)
                 } else {
